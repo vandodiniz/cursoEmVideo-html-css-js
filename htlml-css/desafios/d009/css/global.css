@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    color: white;
+    background-color: rgb(22, 21, 21);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+div img {
+    width: 400px;
+}
+
+iframe {
+    width: 650px; 
+    height: 400px;
+}
+
+p { 
+    font-size: 0.65em;
+}
+
+a {
+    color: aqua;
+}
+
