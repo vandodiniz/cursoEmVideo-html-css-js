@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background-color: #FF241C;
+}
+
+header {
+    background-color: #80120E;
+    padding: 10px 30px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 7px black;
+}
+
+header > h1 {
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+    margin-top: 2px;
+    box-shadow: 3px 3px 7px black;
+}
+
+header > nav {
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+header > nav > span {
+    background-color: white;
+    padding: 2px 20px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 7px black;
+}
+
+header > nav > span:hover {
+    color: red;
+}
+
+main {
+    margin: 10px;
+    display: flex;
+    text-align: justify;
+    gap: 5px;
+}
+
+main > section {
+    border: 1px solid black;
+    box-shadow: 3px 3px 7px black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+aside {
+    background-color: grey;
+    padding-left: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    padding: 30px;
+    color: white;
+    justify-content: space-around;
+    text-align: center;
+}
+
+footer > .contato {
+    width: 135px;
+}
+
+footer > .endereco {
+    width: 193px;
+}
+
+footer > .email {
+    margin-top: 7px;
+}

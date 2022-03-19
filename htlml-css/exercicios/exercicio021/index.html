@@ -1,53 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxes</title>
-    <style>
-        h1 {
-            background-color: goldenrod;
-
-            width: 347px;
-            height: 75px;
-
-            padding-top: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-
-            border-width: 3px;
-            border-style: solid;
-            border-color: blue;
-
-            outline-width: 2px;
-            outline-style: dashed;
-            outline-color: rgb(235, 11, 11);
-
-            margin-top: 10px;
-            margin-right: auto;
-            margin-bottom: 40px;
-            margin-left: auto;
-
-            text-align: center;
-        }
-
-        a {
-            background-color: rgba(128, 128, 128, 0.551);
-
-            padding: 12px 62px 1px 8px;
-
-            border: 1px solid black;
-
-            outline: 1px dashed green;
-
-            margin: 10px 10px 10px 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Grouping Tags</title>
 </head>
 <body>
-    <h1>Títulos são caixas do tipo Box-Level</h1>
-    <p>Parágrafos também são, já os <a href="#">links são caixas do tipo Inline-Level</a>. Caixas do tipo box-level quebram linhas, enquanto as Inline-Level não</p>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <span>Topico 1</span>
+            <span>Topico 2</span>
+            <span>Topico 3</span>
+            <span>Topico 4</span>
+        </nav>      
+    </header>
+
+    <main>
+        <section>
+            <h2>Materia 1</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis expedita quod iure harum unde alias dolor fugiat laboriosam quasi voluptate. Nostrum quisquam unde nam fuga, quam iure aut nisi nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur repellat voluptate animi corrupti impedit, laboriosam error dolores, dolore totam blanditiis voluptatum quibusdam cupiditate quas aliquam debitis officiis possimus ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi similique omnis suscipit harum, reiciendis voluptas deleniti cumque sint sit ipsam voluptate natus consequuntur consectetur quibusdam, quis ea ducimus accusamus accusantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quis nihil error commodi. Sequi animi quia aspernatur hic officiis blanditiis magni totam non ad reiciendis quis voluptas, odio necessitatibus? Cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium vitae nihil ab, maiores perspiciatis nisi reiciendis velit aperiam culpa iure inventore ratione pariatur quaerat. Modi temporibus cum iusto ex.</p>
+                <aside>Matéria escrita por Fulano</aside>
+            </article>
+        </section>
+        <section>
+            <h2>Materia 2</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis expedita quod iure harum unde alias dolor fugiat laboriosam quasi voluptate. Nostrum quisquam unde nam fuga, quam iure aut nisi nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur repellat voluptate animi corrupti impedit, laboriosam error dolores, dolore totam blanditiis voluptatum quibusdam cupiditate quas aliquam debitis officiis possimus ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi similique omnis suscipit harum, reiciendis voluptas deleniti cumque sint sit ipsam voluptate natus consequuntur consectetur quibusdam, quis ea ducimus accusamus accusantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quis nihil error commodi. Sequi animi quia aspernatur hic officiis blanditiis magni totam non ad reiciendis quis voluptas, odio necessitatibus? Cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium vitae nihil ab, maiores perspiciatis nisi reiciendis velit aperiam culpa iure inventore ratione pariatur quaerat. Modi temporibus cum iusto ex.</p>
+                <aside>Matéria escrita por Fulano</aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <span class="contato">(XX)XXXX-XXXX (XX)XXXX-XXXX</span>
+        <span class="endereco">Rua NOME DA RUA, XXX, NOME DO BAIRRO</span>
+        <span class="email">meusite@hotmail.com</span>
+    </footer>
 </body>
 </html>
