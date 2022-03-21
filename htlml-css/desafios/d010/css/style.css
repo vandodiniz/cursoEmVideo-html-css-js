@@ -45,6 +45,15 @@ header > nav > span {
     padding: 0 10px;
 }
 
+header > nav > span > a {
+    color: white;
+    text-decoration: none;
+}
+
+header > nav > span > a:hover {
+    color: #95F7B4;
+}
+
 main {
     background-color: white;
     width: 70vw;
@@ -86,6 +95,16 @@ main > img {
 
 main > img#newlogo {
     width: 25vw
+}
+
+main a {
+    text-decoration: none;
+    background: #95F7B4;
+    color: #295E3A;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 main > .video {
@@ -142,3 +161,13 @@ footer {
     text-align: center;
     padding: 4px;
 }
+
+strong {
+    color:#295E3A;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+
