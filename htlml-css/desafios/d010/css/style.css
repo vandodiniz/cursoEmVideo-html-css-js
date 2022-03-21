@@ -20,7 +20,6 @@ header {
     color: white;
     text-align: center;
     height: 200px;
-    box-shadow: 1px 1px 1px black;
     text-shadow: 1px 1px 1px black;
 }
 
@@ -34,32 +33,34 @@ header > p {
     font-size: 1.4em;
 }
 
-header > nav {
-    margin: 40px 0 0;
+nav {
+    background-color: #295E3A;
     font-weight: bolder;
     text-align: left;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.171);
 }
 
-header > nav > span {
+nav > span {
     margin-left: 10px;
-    padding: 0 10px;
+    padding: 10px;
 }
 
-header > nav > span > a {
+nav > span > a {
     color: white;
     text-decoration: none;
 }
 
-header > nav > span > a:hover {
+nav > span > a:hover {
     color: #95F7B4;
 }
 
 main {
     background-color: white;
-    width: 70vw;
+    min-width: 320px;
+    max-width: 800px;
     margin: 1px auto;
     padding: 20px;
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 0px 0px 7px black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 20px;
 }
@@ -88,13 +89,13 @@ main > h3 {
 }
 
 main > img {
-    width: 70vw;
+    width: 100%;
     display: block;
     margin: 10px auto;
 }
 
 main > img#newlogo {
-    width: 25vw
+    width: 25%;
 }
 
 main a {
@@ -110,23 +111,24 @@ main a:hover {
 main > .video {
     background-color: #295E3A;
     margin: 20px -20px;
-    height: 650px;
+    height: 400px;
+    position: relative;
 }
 
 main > .video > iframe {
-    display: block;
-    margin: auto;
-    padding: 30px;
-    width: 65vw;
-
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    width: 94%;
+    height: 90%;
 }
 
 main > .extras {
     display: block;
     margin: auto;
-    width: 65vw;
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.527);
     text-align: justify;
 }
 
@@ -135,7 +137,7 @@ main > .extras {
     color: white;
     background-color: #43a161;
     margin: auto;
-    width: 65vw;
+    width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 10px;
@@ -150,7 +152,7 @@ main > .extras {
 
 .extras > article > .listas {
     display: flex;
-    gap: 10vw;
+    gap: 10%;
     margin: 15px;
 }
 
