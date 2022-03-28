@@ -79,6 +79,7 @@ main p {
 section {
     display: flex;
     align-items: center;
+    box-shadow: inset 6px 6px 13px 0 black;
 }
 
 section > p {
