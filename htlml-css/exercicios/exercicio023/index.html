@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        /* exercicio1 */
+        .ex1 table {
+            width: 400px;
+            border-collapse: collapse;
+            border: 2px solid red;
+            background-color: rgba(230, 196, 196, 0.959);
+        }
+
+        .ex1 .color {
+            background-color: gray;
+            
+        }
+
+        .ex1 td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        .ex1 .td-color {
+            background-color: aqua;
+        }
+
+        /* exercicio2 */
+        .ex2 table {
+            width: 300px;
+            height: 300px;
+            border-collapse: collapse;
+        }
+
+        .ex2 td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .ex2 .righttop {
+            text-align: right;
+            vertical-align: top;
+        }
+
+        /* exercicio3 */
+        .ex3 table {
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+            position: relative;
+        }
+
+        .ex3 caption {
+            font-size: 1.8em;
+            font-weight: bold;
+            padding: 10px;
+            background: rgba(53, 48, 48, 0.747);
+            border: 1px solid black;
+        }
+
+        .ex3 thead, .ex3 tfoot {
+            color: white;
+            background-color: black;
+        }
+
+        .ex3 > table > thead > tr > th {
+            background: black;
+            position: sticky;
+            top: -1px;
+        }
+
+        .ex3 td, .ex3 th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .ex3 .num {
+            text-align: right;
+        }
+
+        .ex3 tbody tr:nth-child(2n+1) {
+            background: lightgray;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- Primeira Tabela -->
+    <h1>Tabelas</h1>
+    <div class="ex1">
+        <h2>Exercicio 1 - Cores e Bordas</h2>
+        <table>
+            <tr class="color">
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
+            </tr>
+            <tr>
+                <td class="td-color">B1</td>
+                <td>B2</td>
+                <td>B3</td>
+            </tr>
+            <tr class="color">
+                <td>C1</td>
+                <td>C2</td>
+                <td>C3</td>
+            </tr>
+            <tr>
+                <td>D1</td>
+                <td>D2</td>
+            </tr>
+            <tr class="color">
+                <td>E1</td>
+            </tr>
+        </table>
+    </div>
+    <!--  -->
+    <div class="ex2">
+        <h2>Exercicio 2 - Alinhamentos</h2>
+        <table>
+            <tr>
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
+            </tr>
+            <tr>
+                <td class="righttop">B1</td>
+                <td>B2</td>
+                <td>B3</td>
+            </tr>
+            <tr>
+                <td>C1</td>
+                <td>C2</td>
+                <td>C3</td>
+            </tr>
+        </table>
+    </div>
+    <!--  -->
+    <div class="ex3">
+        <h2>Exercicio 3 - Tabelas Grandes</h2>
+        <table>
+            <caption> As 10 maiores populações do Brasil</caption>
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 50px;">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 463 349</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bahia</td>
+                    <td class="num">14 985 284</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Paraná</td>
+                    <td class="num">11 597 484</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 466 630</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Pernambuco</td>
+                    <td class="num">9 674 793</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Ceará</td>
+                    <td class="num">9 240 580</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Pará</td>
+                    <td class="num">8 777 124	</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 338 473	</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">Total:</th>
+                    <td class="num">212 600 000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore alias cupiditate doloribus quo magnam omnis, consequatur maiores optio vitae exercitationem illum beatae, laboriosam, officia deserunt iste! Quos, veniam repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae pariatur voluptas, accusamus a eius ducimus sint ab error reiciendis impedit quasi exercitationem atque iusto in. Maiores repudiandae consectetur dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quos placeat aperiam quas amet tempore eum autem nam iste necessitatibus asperiores, temporibus nemo ullam esse dolores quidem voluptatum dignissimos adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. In repudiandae animi amet minima, culpa et enim, itaque quae exercitationem beatae soluta non repellendus ea sequi nam eligendi. Exercitationem, sapiente deserunt.</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore alias cupiditate doloribus quo magnam omnis, consequatur maiores optio vitae exercitationem illum beatae, laboriosam, officia deserunt iste! Quos, veniam repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae pariatur voluptas, accusamus a eius ducimus sint ab error reiciendis impedit quasi exercitationem atque iusto in. Maiores repudiandae consectetur dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quos placeat aperiam quas amet tempore eum autem nam iste necessitatibus asperiores, temporibus nemo ullam esse dolores quidem voluptatum dignissimos adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. In repudiandae animi amet minima, culpa et enim, itaque quae exercitationem beatae soluta non repellendus ea sequi nam eligendi. Exercitationem, sapiente deserunt.</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore alias cupiditate doloribus quo magnam omnis, consequatur maiores optio vitae exercitationem illum beatae, laboriosam, officia deserunt iste! Quos, veniam repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae pariatur voluptas, accusamus a eius ducimus sint ab error reiciendis impedit quasi exercitationem atque iusto in. Maiores repudiandae consectetur dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quos placeat aperiam quas amet tempore eum autem nam iste necessitatibus asperiores, temporibus nemo ullam esse dolores quidem voluptatum dignissimos adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. In repudiandae animi amet minima, culpa et enim, itaque quae exercitationem beatae soluta non repellendus ea sequi nam eligendi. Exercitationem, sapiente deserunt.</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore alias cupiditate doloribus quo magnam omnis, consequatur maiores optio vitae exercitationem illum beatae, laboriosam, officia deserunt iste! Quos, veniam repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae pariatur voluptas, accusamus a eius ducimus sint ab error reiciendis impedit quasi exercitationem atque iusto in. Maiores repudiandae consectetur dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quos placeat aperiam quas amet tempore eum autem nam iste necessitatibus asperiores, temporibus nemo ullam esse dolores quidem voluptatum dignissimos adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. In repudiandae animi amet minima, culpa et enim, itaque quae exercitationem beatae soluta non repellendus ea sequi nam eligendi. Exercitationem, sapiente deserunt.</p>
+    </div>
+    <!--  -->
+    <div class="ex2">
+        <h2>Exercicio 4 - Mesclagem</h2>
+        <table>
+            <tr>
+                <td>A1</td>
+                <td colspan="2">A23</td>
+            </tr>
+            <tr>
+                <td rowspan="2">BC1</td>
+                <td>B2</td>
+                <td rowspan="2">BC3</td>
+            </tr>
+            <tr>
+                <td>C2</td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>
