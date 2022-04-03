@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p class="classe">Aqui vai o resultado</p>
+    <p id="id">Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div class="msg">
+        <p>Clique em mim</p>
+        <span>por favor</span>
+    </div>
+    <script>
+
+        var tag = window.document.getElementsByTagName('p')[1]
+        window.document.write(`Resultado: ${tag.innerHTML} <br>`)
+
+        var classe = window.document.getElementsByClassName('classe')[0]
+        window.document.write(`Resultado: ${classe.innerHTML} <br>`)
+
+        var id = window.document.getElementById('id')
+        window.document.write(`Resultado: ${id.innerHTML} <br>`)
+
+        var query = window.document.querySelector('div.msg')
+        window.document.write(`Resultado: ${query.innerHTML} <br>`)
+
+        var body = window.document.body
+
+        body.style.background = 'blue'
+        query.style.color = 'white'
+
+    </script>
+</body>
+</html>
