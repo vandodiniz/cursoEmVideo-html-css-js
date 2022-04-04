@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 95vh;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            background-color: white;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        main > input {
+            width: 80px;
+            text-align: center;
+        }
+
+        main > button {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <h1>Somando Valores</h1>
+        <input type="number" name="n1" id="n1">
+        <span>+</span>
+        <input type="number" name="n2" id="n2">
+        <span>=</span>
+        <strong id="res">Resultado</strong>
+        <button>Somar</button>
+    </main>
+
+    <script>
+        var button = document.querySelector('main > button')
+        var res = document.querySelector("main > #res")
+        button.addEventListener('click', soma)
+
+        function soma(){
+            var n1 = Number(document.getElementById('n1').value)
+            var n2 = Number(document.getElementById('n2').value)
+            s = n1 + n2
+            res.innerHTML = s
+        }
+    </script>
+
+</body>
+</html>

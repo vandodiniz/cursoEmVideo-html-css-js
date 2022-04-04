@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 96vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botao {
+            background-color: green;
+            width: 400px;
+            height: 200px;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        .botao:hover {
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="botao">Interaja com o mouse aqui!</div>
+
+    <script>
+        var botao = window.document.getElementsByClassName('botao')[0]
+        botao.addEventListener('click', clique)
+        botao.addEventListener('mouseout', mouseout)
+        botao.addEventListener('mouseenter', mouseenter)
+
+        function clique(){
+            botao.style.background = 'red'
+            botao.innerText = 'Clicou!'
+        }
+
+        function mouseout(){
+            botao.style.background = 'green'
+            botao.innerText = 'Saiu!'
+        }
+
+        function mouseenter(){
+            botao.innerText = 'Entrou!'
+        }
+
+
+    </script>
+</body>
+</html>
