@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de velocidade</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+        }
+
+        main {
+            width: 350px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        main > p {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #vel {
+            width: 50px;
+            text-align: right;
+        }
+    }
+
+    
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Sistema de multas</h1>
+        <p>
+            <span>Velocidade: <input type="number" name="vel" id="vel"> km/h</span>
+            <button id="botao1">Análise</button>
+        </p>
+        <div class="res"></div>
+    </main>
+
+    <script>
+        var botao = document.getElementById('botao1')
+        var res = document.querySelector('main > .res')
+        botao.addEventListener('click', analise)
+
+        function analise(){
+            res.innerHTML = ''
+            var objVel = document.getElementById('vel')
+            var vel = Number(objVel.value)
+            console.log(objVel)
+            console.log(vel)
+            if (vel > 80) {
+                console.log('entrou')
+                res.innerHTML += '<p>Você foi multado.</p>'
+            }
+            res.innerHTML += '<p>Dirija com <strong>cinto de segurança!</strong></p>'
+        }
+    </script>
+</body>
+</html>
