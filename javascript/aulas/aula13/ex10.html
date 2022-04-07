@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX1</title>
+    <style>
+        body {
+            height: 95vh;
+            background: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        main {
+            width: 400px;
+            background: white;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+        }
+
+        main > p {
+            font-size: 20px;
+        }
+
+        main > #foto {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+
+    <main>
+        <p id="tempo"></p>
+        <img src="" alt="Foto da hora" id="foto">
+    </main>
+
+    <footer>
+        <p>Feito por Vando Diniz</p>
+    </footer>
+
+    <script>
+        var hora = Number(new Date().getHours())
+        var tempo = document.getElementById('tempo')
+        var foto = document.getElementById('foto')
+        if (hora <= 12) {
+            document.body.style.background = 'lightblue'
+            foto.src = 'https://www.novotempo.com/wp-content/uploads/2020/04/Amanhecer01.jpg'
+        }
+        else if (hora <= 18){
+            document.body.style.background = 'red'
+            foto.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXviXpkZthxvz-uA9Fgi9l6KeYBxhMsFEz44qcJbovExPGsXzXWQB7cN5oucrtfEk-CQc&usqp=CAU'
+        }
+        else{
+            document.body.style.background = 'lightgray'
+            foto.src = 'https://vitormarx.files.wordpress.com/2018/10/noite02.jpg'
+        }
+        tempo.innerText = `Agora são ${hora} horas.`
+    </script>
+</body>
+</html>

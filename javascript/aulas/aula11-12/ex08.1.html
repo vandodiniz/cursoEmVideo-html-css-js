@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Consulta de nacionalidade</h1>
+    <input type="text" name="pais" id="pais">
+    <button id="botao1">Verificar</button>
+    <div class="res"></div>
+
+    <script>
+        var botao1 = document.getElementById('botao1')
+        botao1.addEventListener('click', clique)
+
+        function clique(){
+            var res = document.querySelector('.res')
+            console.log('entrou')
+            res.innerHTML = ''
+            var pais = document.getElementById('pais').value
+            var res = document.querySelector('.res')
+
+            if (pais == 'BRASIL'){
+                res.innerHTML +=  '<p>Você é brasileiro</p>'
+            }
+
+            else {
+                res.innerHTML += '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+</body>
+</html>
