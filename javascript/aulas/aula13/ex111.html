@@ -58,6 +58,7 @@
         }
 
         img {
+            display: none;
             width: 100%;
             height: 300px;
             border-radius: 50%;
@@ -112,6 +113,7 @@
                 if(sexo[0].checked) {
                     respostaIdade.innerText = `Homem que irá fazer ${idade} anos em ${anoAtual}!`
 
+                    imagem.style.display = 'block'
                     if (idade<=18) 
                         imagem.src = 'https://thumbs.dreamstime.com/b/adolescente-masculino-novo-saud%C3%A1vel-40889554.jpg'
                     else if (idade<=65)
@@ -122,7 +124,7 @@
 
                 else if(sexo[1].checked) {
                     respostaIdade.innerText = `Mulher que irá fazer ${idade} anos em ${anoAtual}!`
-
+                    imagem.style.display = 'block'
                     if (idade<=18) 
                         imagem.src = 'https://cdn.pixabay.com/photo/2018/01/16/19/55/people-3086718_960_720.jpg'
                     else if (idade<=65)
