@@ -10,6 +10,7 @@ function tabuada(){
         res.innerHTML = ''
     }
     else {
+        res.innerHTML = ''
         for(let c = 1; c<10; c++){
             let linha = document.createElement('option')
             linha.text = ` ${c} x ${num} = ${c*Number(num)} `
