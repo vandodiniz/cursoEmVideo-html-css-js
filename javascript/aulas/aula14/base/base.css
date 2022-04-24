@@ -1,0 +1,31 @@
+body {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 49, 133);
+    color: white;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    border-radius: 13px;
+    color: black;
+    padding: 20px;
+
+}
+
+section > #div1 {
+
+}
+
+section > #div2 {
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
