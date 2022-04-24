@@ -3,10 +3,10 @@ var lista = document.getElementById('lista')
 var res = document.getElementById('div2')
 
 function adicionar(){
-    let number = document.getElementById('num').value
-    let n = Number(number)
+    let number = document.getElementById('num')
+    let n = Number(number.value)
 
-    if (number.length == 0 || n <= 0 || n > 100)
+    if (number.value.length == 0 || n <= 0 || n > 100)
         alert('Insira um número válido!')
 
     else if (vetor.indexOf(n) != -1)
@@ -19,15 +19,19 @@ function adicionar(){
         lista.append(linha)
     }
     res.innerHTML = ''
+    number.value = ''
+    number.focus()
 }
 
 function calcular(){
-    console.log('entrou')
     var tam = vetor.length
 
     if(tam >= 2){
         var soma = 0
-        for(var pos = 0; pos < tam; pos++)
+        // for(var pos = 0; pos < tam; pos++)
+        //     soma += vetor[pos]
+
+        for (let pos in vetor)
             soma += vetor[pos]
 
         var maior = Math.max.apply(null, vetor)
