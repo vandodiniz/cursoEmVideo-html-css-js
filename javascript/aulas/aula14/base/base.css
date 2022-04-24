@@ -17,15 +17,11 @@ section {
 
 }
 
-section > #div1 {
-
-}
-
-section > #div2 {
-
-}
-
 a {
     color: white;
     text-decoration: none;
+}
+
+select {
+    width: 200px;
 }

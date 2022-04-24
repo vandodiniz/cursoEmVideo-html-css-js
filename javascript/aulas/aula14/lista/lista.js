@@ -47,4 +47,5 @@ function calcular(){
 function limpar(){
     vetor.length = 0
     lista.innerHTML = ''
+    res.innerHTML = ''
 }
