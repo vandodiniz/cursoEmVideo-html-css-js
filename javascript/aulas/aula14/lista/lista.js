@@ -31,8 +31,11 @@ function calcular(){
         // for(var pos = 0; pos < tam; pos++)
         //     soma += vetor[pos]
 
-        for (let pos in vetor)
-            soma += vetor[pos]
+        // for (let pos in vetor)
+        //     soma += vetor[pos]
+
+        for (let elemento of vetor)
+            soma += elemento
 
         var maior = Math.max.apply(null, vetor)
         var menor = Math.min.apply(null, vetor)
